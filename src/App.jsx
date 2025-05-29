@@ -37,6 +37,38 @@ function App() {
           </p>
         </div>
       </section>
+
+      { /* My Stacks */ }
+      <section id="tech-stakcs" className="py-20 px-6 bg-white dark:bg-gray-900">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Technologies I Use</h2>
+
+          { /* Programming Languages */ }
+          <div className="mb-10">
+            <h3 className="text-xl font-semibold mb-4">Programming Language</h3>
+            <div className="flex flex-wrap gap-8 text-5xl">
+              <i className="devicon-cplusplus-plain colored" title="C++"></i>
+              <i className="devicon-c-plain colored" title="C"></i>
+              <i className="devicon-python-plain colored" title="Python"></i>
+              <i className="devicon-matlab-plain colored" title="MATLAB"></i>
+              <img src="icons/FORTRAN.svg" alt="FORTRAN" title="FORTRAN" className="w-12 h-12"/>
+            </div>
+          </div>
+
+          { /* Data Manipulation and Visulization */ }
+          <div className="mb-10">
+            <h3 className="text-xl font-semibold mb-4">Data Manipulation and Visualization</h3>
+            <div className="flex flex-wrap gap-8 text-5xl">
+              <i className="devicon-mysql-plain colored" title="MySQL"></i>
+              <i className="devicon-numpy-original colored" title="Numpy"></i>
+              <i className="devicon-pandas-original colored" title="Pandas"></i>
+              <img src="icons/seaborn-1.svg" alt="Seaborn" title="Seaborn" className="w-12 h-12"/>
+              <img src="icons/matplotlib.svg" alt="Matplotlib" title="Matplotlib" className="w-12 h-12"/>
+              <img src="icons/scipy.svg" alt="Scipy" title="Scipy" className="w-12 h-12"/>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
