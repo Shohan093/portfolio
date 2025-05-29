@@ -24,6 +24,19 @@ function App() {
           </p>
         </div>
       </section>
+
+      { /* About Section */ }
+      <section id="about" className="py-20 px-6 bg-gray-100 dark:bg-gray-800">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
+          <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            I bring a strong foundation in analytical thinking, quantitative analysis, and mathematical modeling,
+            backed by a B.Sc. in Mathematics from Shahjalal University of Science and Technology (SUST),
+            and currently pursuing an M.Sc. in Data Science at Bangladesh Univeversity of Engineering and technology (BUET). I’m constantly exploring intersections of data science, machine learning, and computational modeling —
+            looking to contribute to innovative projects, research, or industry roles where I can grow and make a meaningful impact.
+          </p>
+        </div>
+      </section>
     </div>
   )
 }
