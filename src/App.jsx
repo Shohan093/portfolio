@@ -1,13 +1,14 @@
+import GlitchText from "./components/GlitchText";
+
 function App() {
   return (
     <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen">
-      
       { /* Navigation Bar */ }
-      <nav className="p-4 shadow-md sticky top-0 bg-white dark:bg-gray-900 z-50">
+      <nav className="fixed top-0 left-0 w-full p-4 bg-[#36404A] text-white shadow-md z-50">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
-          <h1 className="text-xl font-bold">Anisujjaman Shohan</h1>
+          <h1 className="text-xl font-bold font-poppins">Anisujjaman Shohan</h1>
           <ul className="flex gap-6 text-sm">
-            <li><a href="#hero" className="hover:text-blue-500">Home</a></li>
+            <li><a href="#home" className="hover:text-blue-500">Home</a></li>
             <li><a href="#about" className="hover:text-blue-500">About</a></li>
             <li><a href="#blogs" className="hover:text-blue-500">Blogs</a></li>
             <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
@@ -16,13 +17,14 @@ function App() {
       </nav>
 
       { /* Hero Section */ }
-      <section id="hero" className="flex items-center justify-center text-center py-32 px-4">
-        <div>
-          <h2 className="flex items-center justify-center text-center py-32 px-4">Hi, I am Shohan</h2>
-          <p className="text-lg max-w-xl mx-auto">
-            Aspiring Data Scientist | ML & AI Enthusiast | Building cool things one step at a time.
-          </p>
-        </div>
+      <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-[#401F18] text-slate-100">
+        <h1 className="text-4xl font-poppins md:text-6xl font-bold mb-4">
+          Good day, I am <span className="text-amber-500">Shohan</span>
+        </h1>
+        <GlitchText text="Aspiring Data Scientist | AI/ML Engineer" />
+        <a href="#about" className="mt-8 inline-block px-6 py-3 text-sm font-medium text-slate-900 bg-amber-500 rounded-full shadow-md hover:bg-amber-400 transition">
+          Explore More ↓
+        </a>
       </section>
 
       { /* About Section */ }

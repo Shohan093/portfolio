@@ -6,7 +6,13 @@ export default {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+        code: ['Source Code Pro', 'monospace'],
+      },
+    },
   },
   plugins: [],
 }
+
