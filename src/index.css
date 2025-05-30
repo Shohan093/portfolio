@@ -14,7 +14,15 @@
 }
 
 .marquee-content {
-  display: inline-block;
+  display: inline-flex;             
+  flex-wrap: nowrap;         
+  align-items: center;       
+  gap: 3rem;            
   padding-left: 100%;
   animation: marquee 30s linear infinite;
+}
+
+img {
+  display: inline-block;
+  max-width: unset;
 }

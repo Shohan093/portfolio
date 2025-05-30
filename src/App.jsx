@@ -8,10 +8,10 @@ function App() {
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <h1 className="text-xl font-bold font-poppins">Anisujjaman Shohan</h1>
           <ul className="flex gap-6 text-sm">
-            <li><a href="#home" className="hover:text-blue-500">Home</a></li>
-            <li><a href="#about" className="hover:text-blue-500">About</a></li>
-            <li><a href="#blogs" className="hover:text-blue-500">Blogs</a></li>
-            <li><a href="#contact" className="hover:text-blue-500">Contact</a></li>
+            <li><a href="#home" className="hover:text-blue-500 font-poppins">Home</a></li>
+            <li><a href="#about" className="hover:text-blue-500 font-poppins">About</a></li>
+            <li><a href="#blogs" className="hover:text-blue-500 font-poppins">Blogs</a></li>
+            <li><a href="#contact" className="hover:text-blue-500 font-poppins">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -22,88 +22,82 @@ function App() {
           Good day, I am <span className="text-amber-500">Shohan</span>
         </h1>
         <GlitchText text="Aspiring Data Scientist | AI/ML Engineer" />
-        <a href="#about" className="mt-8 inline-block px-6 py-3 text-sm font-medium text-slate-900 bg-amber-500 rounded-full shadow-md hover:bg-amber-400 transition">
+        <a href="#about" className="mt-8 inline-block px-6 py-3 text-sm font-medium font-code text-slate-900 bg-amber-500 rounded-full shadow-md hover:bg-amber-400 transition">
           Explore More ↓
         </a>
       </section>
 
       { /* About Section */ }
-      <section id="about" className="py-20 px-6 bg-gray-100 dark:bg-gray-800">
+      <section id="about" className="py-20 px-6 min-h-screen bg-[#253D2C]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">About Me</h2>
-          <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+          <h2 className="text-3xl font-bold mb-6 text-center font-poppins text-white">About Me</h2>
+          <p className="text-lg leading-relaxed text-white text-justify font-poppins mb-6">
             I bring a strong foundation in analytical thinking, quantitative analysis, and mathematical modeling,
             backed by a B.Sc. in Mathematics from Shahjalal University of Science and Technology (SUST),
-            and currently pursuing an M.Sc. in Data Science at Bangladesh Univeversity of Engineering and technology (BUET). I’m constantly exploring intersections of data science, machine learning, and computational modeling —
-            looking to contribute to innovative projects, research, or industry roles where I can grow and make a meaningful impact.
-          </p>
-        </div>
-      </section>
-
-      { /* My Stacks */ }
-      <section id="tech-stakcs" className="py-20 px-6 bg-white dark:bg-gray-900">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-6">Technologies I Use</h2>
-          <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 text-justify mb-6">
-            Over the years, I have worked with a variety of technologies and tools that have helped me in my journey as a data scientist.
-            Below are some of the key technologies I am proficient in, which I use to solve complex problems and build innovative solutions.
+            and currently pursuing an M.Sc. in Data Science at Bangladesh Univeversity of Engineering and technology (BUET). I’m constantly 
+            exploring intersections of data science, machine learning, and computational modeling — looking to contribute to innovative projects,
+            research, or industry roles where I can grow and make a meaningful impact. Over the years, I have worked with a variety of
+            technologies and tools that have helped me in my journey as a data scientist. Below are some of the key technologies I am proficient in, 
+            which I use to solve complex problems and build innovative solutions.
           </p>
 
-          { /* Programming Languages */ }
+          {/* My Stacks */}
           <div className="mb-10">
-            <h3 className="text-xl font-semibold mb-4">Programming Language</h3>
-            <div className="flex flex-wrap gap-8 text-5xl">
-              <i className="devicon-cplusplus-plain colored" title="C++"></i>
-              <i className="devicon-c-plain colored" title="C"></i>
-              <i className="devicon-python-plain colored" title="Python"></i>
-              <i className="devicon-matlab-plain colored" title="MATLAB"></i>
-              <img src="icons/FORTRAN.svg" alt="FORTRAN" title="FORTRAN" className="w-12 h-12"/>
-            </div>
-          </div>
+            <h3 className="text-xl font-semibold mb-4 font-poppins text-white text-center">My Stacks</h3>
 
-          { /* Data Manipulation and Visulization */ }
-          <div className="mb-10">
-            <h3 className="text-xl font-semibold mb-4">Data Manipulation and Visualization</h3>
-            <div className="flex flex-wrap gap-8 text-5xl">
-              <i className="devicon-numpy-original colored" title="Numpy"></i>
-              <i className="devicon-pandas-original colored" title="Pandas"></i>
-              <img src="icons/seaborn-1.svg" alt="Seaborn" title="Seaborn" className="w-12 h-12"/>
-              <img src="icons/plotly-express.svg" alt="Plotly-Express" title="Plotly-Express" className="w-12 h-12"/>
-              <img src="icons/matplotlib.svg" alt="Matplotlib" title="Matplotlib" className="w-12 h-12"/>
-              <img src="icons/scipy.svg" alt="Scipy" title="Scipy" className="w-12 h-12"/>
-              <img src="icons/geopandas_icon.svg" alt="Geopandas" title="Geopandas" className="w-12 h-12"/>
-            </div>
-          </div>
+            <div className="marquee-wrapper overflow-hidden">
+              {/* Duplicate the icons inside marquee-content to create seamless loop */}
+              <div className="marquee-content flex gap-12 text-5xl items-center animate-marquee w-[200%]">
+                {/* First set of icons */}
+                <i className="devicon-cplusplus-plain colored" title="C++"></i>
+                <i className="devicon-c-plain colored" title="C"></i>
+                <i className="devicon-python-plain colored" title="Python"></i>
+                <i className="devicon-matlab-plain colored" title="MATLAB"></i>
+                <img src="icons/FORTRAN.svg" alt="FORTRAN" title="FORTRAN" className="h-12 w-12 inline-block align-middle"/>
+                <i className="devicon-numpy-original colored" title="Numpy"></i>
+                <i className="devicon-pandas-original colored" title="Pandas"></i>
+                <img src="icons/seaborn-1.svg" alt="Seaborn" title="Seaborn" className="h-12 w-12 inline-block align-middle"/>
+                <img src="icons/plotly-express.svg" alt="Plotly-Express" title="Plotly-Express" className="h-12 w-12 inline-block align-middle"/>
+                <img src="icons/matplotlib.svg" alt="Matplotlib" title="Matplotlib" className="h-12 w-12 inline-block align-middle"/>
+                <img src="icons/scipy.svg" alt="Scipy" title="Scipy" className="h-12 w-12 inline-block align-middle"/>
+                <img src="icons/geopandas_icon.svg" alt="Geopandas" title="Geopandas" className="h-12 w-12 inline-block align-middle"/>
+                <i className="devicon-mysql-plain colored" title="MySQL"></i>
+                <img src="icons/sklearn.svg" alt="Scikit-learn" title="Scikit-Learn" className="h-12 w-12 inline-block align-middle"/>
+                <i className="devicon-pytorch-original colored" title="PyTorch"></i>
+                <i className="devicon-tensorflow-original colored" title="TensorFlow"></i>
+                <img src="icons/keras.svg" alt="Keras" title="Keras" className="h-12 w-12 inline-block align-middle"/>
+                <i className="devicon-linux-plain colored" title="Linux"></i>
+                <i className="devicon-jupyter-plain colored" title="Jupyter Notebook"></i>
+                <i className="devicon-git-plain colored" title="Git"></i>
+                <i className="devicon-github-original colored" title="GitHub"></i>
+                <i className="devicon-latex-original colored" title="LaTeX"></i>
+                <i className="devicon-vscode-plain colored" title="Visual Studio Code"></i>
 
-          { /* Database */ }
-          <div className="mb-10">
-            <h3 className="text-xl font-semibold mb-4">Database</h3>
-            <div className="flex flex-wrap gap-8 text-5xl">
-              <i className="devicon-mysql-plain colored" title="MySQL"></i>
-            </div>
-          </div>
-
-          { /* Machine Learning */ }
-          <div className="mb-10">
-            <h3 className="text-xl font-semibold mb-4">ML, DL & NLP</h3>
-            <div className="flex flex-wrap gap-8 text-5xl">
-              <img src="icons/sklearn.svg" alt="Scikit-learn" title="Scikit-Learn" className="h-12 w-12"/>
-              <i className="devicon-pytorch-original colored" title="PyTorch"></i>
-              <i className="devicon-tensorflow-original colored" title="TensorFlow"></i>
-              <img src="icons/keras.svg" alt="Keras" title="Keras" className="w-12 h-12"/>
-            </div>
-          </div>
-
-          {/* Tools */}
-          <div className="mb-10">
-            <h3 className="text-xl font-semibold mb-4">Tools</h3>
-            <div className="flex flex-wrap gap-8 text-5xl">
-              <i className="devicon-linux-plain colored" title="Linux"></i>
-              <i className="devicon-jupyter-plain colored" title="Jupyter Notebook"></i>
-              <i className="devicon-git-plain colored" title="Git"></i>
-              <i className="devicon-github-original colored" title="GitHub"></i>
-              <i className="devicon-latex-original colored" title="LaTeX"></i>
-              <i className="devicon-vscode-plain colored" title="Visual Studio Code"></i>
+                {/* Duplicate set for smooth looping */}
+                <i className="devicon-cplusplus-plain colored" title="C++"></i>
+                <i className="devicon-c-plain colored" title="C"></i>
+                <i className="devicon-python-plain colored" title="Python"></i>
+                <i className="devicon-matlab-plain colored" title="MATLAB"></i>
+                <img src="icons/FORTRAN.svg" alt="FORTRAN" title="FORTRAN" className="h-12 w-12 inline-block align-middle"/>
+                <i className="devicon-numpy-original colored" title="Numpy"></i>
+                <i className="devicon-pandas-original colored" title="Pandas"></i>
+                <img src="icons/seaborn-1.svg" alt="Seaborn" title="Seaborn" className="h-12 w-12 inline-block align-middle"/>
+                <img src="icons/plotly-express.svg" alt="Plotly-Express" title="Plotly-Express" className="h-12 w-12 inline-block align-middle"/>
+                <img src="icons/matplotlib.svg" alt="Matplotlib" title="Matplotlib" className="h-12 w-12 inline-block align-middle"/>
+                <img src="icons/scipy.svg" alt="Scipy" title="Scipy" className="h-12 w-12 inline-block align-middle"/>
+                <img src="icons/geopandas_icon.svg" alt="Geopandas" title="Geopandas" className="h-12 w-12 inline-block align-middle"/>
+                <i className="devicon-mysql-plain colored" title="MySQL"></i>
+                <img src="icons/sklearn.svg" alt="Scikit-learn" title="Scikit-Learn" className="h-12 w-12 inline-block align-middle"/>
+                <i className="devicon-pytorch-original colored" title="PyTorch"></i>
+                <i className="devicon-tensorflow-original colored" title="TensorFlow"></i>
+                <img src="icons/keras.svg" alt="Keras" title="Keras" className="h-12 w-12 inline-block align-middle"/>
+                <i className="devicon-linux-plain colored" title="Linux"></i>
+                <i className="devicon-jupyter-plain colored" title="Jupyter Notebook"></i>
+                <i className="devicon-git-plain colored" title="Git"></i>
+                <i className="devicon-github-original colored" title="GitHub"></i>
+                <i className="devicon-latex-original colored" title="LaTeX"></i>
+                <i className="devicon-vscode-plain colored" title="Visual Studio Code"></i>
+              </div>
             </div>
           </div>
         </div>
