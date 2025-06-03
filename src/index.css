@@ -16,7 +16,7 @@
 @layer utilities {
   .hovered {
     transform: scale(1.5) translate(-50%, -50%);
-    border-color: #000000; /* Lighter amber */
+    border-color: #000000;
   }
 }
 

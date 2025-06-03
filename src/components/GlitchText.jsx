@@ -31,6 +31,6 @@ export default function GlitchText({ text = "", interval = 80, loopDelay = 7000 
   }, [revealIndex, cycle, text, interval, loopDelay]);
 
   return (
-    <p className="text-lg md:text-2xl max-w-2xl font-code whitespace-nowrap">{display}</p>
+    <p className="text-lg md:text-2xl max-w-2xl font-code whitespace-nowrap text-black">{display}</p>
   );
 }

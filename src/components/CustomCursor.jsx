@@ -1,8 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const CustomCursor = () => {
   const dotRef = useRef(null);
   const ringRef = useRef(null);
+  const textRef = useRef(null);
+
+  const [cursorText, setCursorText] = useState("");
 
   useEffect(() => {
     const moveCursor = (e) => {
@@ -19,10 +22,12 @@ const CustomCursor = () => {
 
     const addHoverEffect = (e) => {
       ringRef.current.classList.add("hovered");
+      setCursorText("");
     };
 
     const removeHoverEffect = (e) => {
       ringRef.current.classList.remove("hovered");
+      setCursorText("");
     };
 
     document.addEventListener("mousemove", moveCursor);
@@ -44,14 +49,24 @@ const CustomCursor = () => {
 
   return (
     <>
+      {/* Inside Dot */}
       <div
         ref={dotRef}
-        className="pointer-events-none fixed top-0 left-0 z-[9999] w-0.5 h-0.5 bg-black rounded-full transform -translate-x-1/2 -translate-y-1/2 transition duration-75 ease-out"
+        className="pointer-events-none fixed top-0 left-0 z-[9999] w-1.5 h-1.5 bg-black rounded-full transform -translate-x-1/2 -translate-y-1/2 transition duration-75 ease-out"
       ></div>
+
+      {/* Outer Ring */}
       <div
         ref={ringRef}
-        className="pointer-events-none fixed top-0 left-0 z-[9998] w-6 h-6 border border-black rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-all duration-150 ease-out"
-      ></div>
+        className="pointer-events-none fixed top-0 left-0 z-[9998] w-7 h-7 border border-black rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-all duration-150 ease-out flex items-center justify-center"
+      >
+        <span
+          ref={textRef}
+          className="text-xs font-medium text-black transition-colors duration-200"
+        >
+          {cursorText}
+        </span>
+      </div>
     </>
   );
 };
