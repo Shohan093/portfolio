@@ -1,8 +1,11 @@
 import GlitchText from "./components/GlitchText";
+import SocialSidebar from "./components/SocialSidebar";
 
 function App() {
   return (
     <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen">
+
+      <SocialSidebar />
       { /* Navigation Bar */ }
       <nav className="fixed top-0 left-0 w-full p-4 bg-[#36404A] text-white shadow-md z-50">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
@@ -11,7 +14,7 @@ function App() {
             <li><a href="#home" className="hover:text-blue-500 font-poppins">Home</a></li>
             <li><a href="#about" className="hover:text-blue-500 font-poppins">About</a></li>
             <li><a href="#blogs" className="hover:text-blue-500 font-poppins">Blogs</a></li>
-            <li><a href="#contact" className="hover:text-blue-500 font-poppins">Contact</a></li>
+            {/* <li><a href="#contact" className="hover:text-blue-500 font-poppins">Contact</a></li> */}
           </ul>
         </div>
       </nav>
