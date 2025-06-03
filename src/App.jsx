@@ -1,19 +1,20 @@
 import GlitchText from "./components/GlitchText";
 import SocialSidebar from "./components/SocialSidebar";
+import CustomCursor from "./components/CustomCursor";
 
 function App() {
   return (
-    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen">
-
+    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen cursor-none">
+      <CustomCursor />  
       <SocialSidebar />
       { /* Navigation Bar */ }
       <nav className="fixed top-0 left-0 w-full p-4 bg-[#36404A] text-white shadow-md z-50">
         <div className="max-w-5xl mx-auto flex justify-between items-center">
           <h1 className="text-xl font-bold font-poppins">Anisujjaman Shohan</h1>
           <ul className="flex gap-6 text-sm">
-            <li><a href="#home" className="hover:text-blue-500 font-poppins">Home</a></li>
-            <li><a href="#about" className="hover:text-blue-500 font-poppins">About</a></li>
-            <li><a href="#blogs" className="hover:text-blue-500 font-poppins">Blogs</a></li>
+            <li><a href="#home" className="cursor-none hover:text-blue-500 font-poppins">Home</a></li>
+            <li><a href="#about" className="cursor-none hover:text-blue-500 font-poppins">About</a></li>
+            <li><a href="#blogs" className="cursor-none hover:text-blue-500 font-poppins">Blogs</a></li>
             {/* <li><a href="#contact" className="hover:text-blue-500 font-poppins">Contact</a></li> */}
           </ul>
         </div>
@@ -25,7 +26,7 @@ function App() {
           Good day, I am <span className="text-amber-500">Shohan</span>
         </h1>
         <GlitchText text="Aspiring Data Scientist | AI/ML Researcher" />
-        <a href="#about" className="mt-8 inline-block px-6 py-3 text-sm font-medium font-code text-slate-900 bg-amber-500 rounded-full shadow-md hover:bg-amber-400 transition">
+        <a href="#about" className="cursor-none mt-8 inline-block px-6 py-3 text-sm font-medium font-code text-slate-900 bg-amber-500 rounded-full shadow-md hover:bg-amber-400 transition">
           Explore More ↓
         </a>
       </section>
