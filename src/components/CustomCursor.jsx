@@ -62,7 +62,7 @@ const CustomCursor = () => {
       >
         <span
           ref={textRef}
-          className="text-xs font-medium text-black transition-colors duration-200"
+          className="text-xs font-medium text-white transition-colors duration-200"
         >
           {cursorText}
         </span>
