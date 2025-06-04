@@ -52,13 +52,13 @@ const CustomCursor = () => {
       {/* Inside Dot */}
       <div
         ref={dotRef}
-        className="pointer-events-none fixed top-0 left-0 z-[9999] w-1.5 h-1.5 bg-black rounded-full transform -translate-x-1/2 -translate-y-1/2 transition duration-75 ease-out"
+        className="pointer-events-none fixed top-0 left-0 z-[9999] w-1.5 h-1.5 bg-white rounded-full transform -translate-x-1/2 -translate-y-1/2 transition duration-75 ease-out"
       ></div>
 
       {/* Outer Ring */}
       <div
         ref={ringRef}
-        className="pointer-events-none fixed top-0 left-0 z-[9998] w-7 h-7 border border-black rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-all duration-150 ease-out flex items-center justify-center"
+        className="pointer-events-none fixed top-0 left-0 z-[9998] w-7 h-7 border border-white rounded-full transform -translate-x-1/2 -translate-y-1/2 transition-all duration-150 ease-out flex items-center justify-center"
       >
         <span
           ref={textRef}

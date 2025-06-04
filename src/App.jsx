@@ -1,10 +1,12 @@
 import GlitchText from "./components/GlitchText";
 import SocialSidebar from "./components/SocialSidebar";
 import CustomCursor from "./components/CustomCursor";
+import ParticlesBackground from "./components/ParticlesBackground";
 
 function App() {
   return (
-    <div className="bg-white text-gray-900 dark:bg-gray-900 dark:text-white min-h-screen cursor-none">
+    <div className="relative bg-gradient-to-br from-[#1e1b4b] via-[#2b235a] to-[#120f3d] text-white min-h-screen cursor-none overflow-hidden">
+      <ParticlesBackground />
       <CustomCursor />  
       <SocialSidebar />
       { /* Navigation Bar */ }
@@ -22,7 +24,7 @@ function App() {
 
       { /* Hero Section */ }
       <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-transparent text-slate-100">
-        <h1 className="text-4xl font-poppins md:text-6xl font-bold mb-4 text-black dark:text-white">
+        <h1 className="text-4xl font-poppins md:text-6xl font-bold mb-4 text-white">
           Good day, I am <span className="text-amber-500">Shohan</span>
         </h1>
         <GlitchText text="Aspiring Data Scientist | AI/ML Researcher" />
@@ -34,8 +36,8 @@ function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-6 min-h-screen">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center font-poppins">About Me</h2>
-          <p className="text-lg leading-relaxed text-justify font-poppins mb-6">
+          <h2 className="text-3xl font-bold mb-6 text-center text-white font-poppins">About Me</h2>
+          <p className="text-lg leading-relaxed text-justify text-white font-poppins mb-6">
             I bring a strong foundation in analytical thinking, quantitative analysis, and mathematical modeling,
             backed by a B.Sc. in Mathematics from Shahjalal University of Science and Technology (SUST),
             and currently pursuing an M.Sc. in Data Science at Bangladesh Univeversity of Engineering and technology (BUET). I’m constantly 
@@ -47,7 +49,7 @@ function App() {
 
           {/* My Stacks */}
           <div className="mb-10">
-            <h3 className="text-xl font-semibold mb-4 font-poppins text-center">My Stacks</h3>
+            <h3 className="text-xl font-semibold mb-4 font-poppins text-center text-white">My Stacks</h3>
 
             <div className="relative overflow-hidden whitespace-nowrap">
               <div className="flex gap-12 animate-marquee">
