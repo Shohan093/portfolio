@@ -5,7 +5,7 @@ import ParticlesBackground from "./components/ParticlesBackground";
 
 function App() {
   return (
-    <div className="relative bg-gradient-to-br from-[#1e1b4b] via-[#2b235a] to-[#120f3d] text-white min-h-screen cursor-none overflow-hidden">
+    <div className="relative bg-gradient-to-br from-[#1f2937] via-[#111827] to-black text-gray-900 dark:text-white min-h-screen cursor-none overflow-hidden">
       <ParticlesBackground />
       <CustomCursor />  
       <SocialSidebar />
