@@ -73,7 +73,8 @@ function App() {
                 <i className="devicon-linux-plain colored text-5xl" title="Linux"></i>
                 <i className="devicon-jupyter-plain colored text-5xl" title="Jupyter Notebook"></i>
                 <i className="devicon-git-plain colored text-5xl" title="Git"></i>
-                <i className="devicon-github-original colored text-5xl" title="GitHub"></i>
+                {/* <i className="devicon-github-original colored text-5xl" title="GitHub"></i> */}
+                <i class="devicon-github-original-wordmark text-5xl" title="GitHub"></i>
                 <i className="devicon-latex-original colored text-5xl" title="LaTeX"></i>
                 <i className="devicon-vscode-plain colored text-5xl" title="VS Code"></i>
               </div>
